@@ -1,0 +1,32 @@
+{
+  "contactos": [
+    {
+      "id": "47d5",
+      "nombre": "Santiago",
+      "telefono": "3005670945",
+      "correo": "s@gmail.com",
+      "etiqueta": "Instructor"
+    },
+    {
+      "id": "82b1",
+      "nombre": "Valeria Gomez",
+      "telefono": "3104567890",
+      "correo": "valeria.g@outlook.com",
+      "etiqueta": "Estudiante (19-23 años)"
+    },
+    {
+      "nombre": "Ricardo Bernal",
+      "telefono": "3182223344",
+      "correo": "r.berna@consultoria.com",
+      "etiqueta": "Asesor Legal",
+      "id": "67f2"
+    },
+    {
+      "id": "e9b3",
+      "nombre": "Sofía Castro",
+      "telefono": "3164445566",
+      "correo": "sofi.castro@bienestar.org",
+      "etiqueta": "Trabajadora Social"
+    }
+  ]
+}
