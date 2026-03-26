@@ -15,7 +15,7 @@ server.use(middlewares);
 
 // Habilitar CORS para peticiones desde el frontend (Netlify/Localhost)
 server.use(cors({
-  origin: process.env.FRONTEND_URL || "http://localhost:5173",
+  origin: process.env.FRONTEND_URL || "https://softcine.netlify.app",
   credentials: true
 }));
 
