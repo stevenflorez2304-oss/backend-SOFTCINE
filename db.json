@@ -5,6 +5,14 @@
       "autor": "admin@sena.com",
       "contenido": "Excelente trabajo en el proyecto.",
       "fecha": "2026-03-26T21:00:00.000Z"
+    },
+    {
+      "movieId": "1290821",
+      "nombre": "Santiago",
+      "calificacion": 5,
+      "comentario": "Me encanto está pelicula",
+      "fecha": "2026-03-26T21:23:49.052Z",
+      "id": "qERUnEf"
     }
   ],
   "contactos": [

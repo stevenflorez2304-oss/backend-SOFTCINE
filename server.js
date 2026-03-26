@@ -11,17 +11,24 @@ const middlewares = jsonServer.defaults();
 const PORT = process.env.PORT || 3000;
 const SECRET_KEY = "super_secreto_cinescope_v1";
 
-server.use(middlewares);
-
-// Habilitar CORS para peticiones desde el frontend (Netlify/Localhost)
+// 1. CORS primero — antes que cualquier otro middleware
 server.use(cors({
   origin: process.env.FRONTEND_URL || "https://softcine.netlify.app",
-  credentials: true
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
-// Habilitar cookie parser
+// Responder OK a peticiones preflight OPTIONS
+server.options("*", cors());
+
+// 2. Cookie parser y body parser
 server.use(cookieParser());
 server.use(jsonServer.bodyParser);
+
+// 3. Middlewares por defecto de JSON Server (logger, static, etc.)
+server.use(middlewares);
+
 
 // Endpoint de login
 server.post("/api/login", (req, res) => {
