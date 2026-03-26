@@ -1,4 +1,12 @@
 {
+  "comentarios": [
+    {
+      "id": "c001",
+      "autor": "admin@sena.com",
+      "contenido": "Excelente trabajo en el proyecto.",
+      "fecha": "2026-03-26T21:00:00.000Z"
+    }
+  ],
   "contactos": [
     {
       "id": "47d5",
